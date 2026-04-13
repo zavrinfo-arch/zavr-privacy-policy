@@ -5,141 +5,183 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy - Zavr: Goal-Based Saving App</title>
     <style>
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-            color: #333;
+        :root {
+            --bg-color: #0f0f0f;
+            --card-bg: #1a1a1a;
+            --text-primary: #e0e0e0;
+            --text-secondary: #a0a0a0;
+            --accent-gradient: linear-gradient(135deg, #ff6b6b 0%, #f0a500 100%);
+            --border-color: #2a2a2a;
+            --gold-muted: #c5a059;
         }
-        h1, h2 { color: #2c3e50; }
-        h1 { border-bottom: 3px solid #2c3e50; padding-bottom: 10px; }
-        h2 { margin-top: 25px; border-left: 4px solid #2c3e50; padding-left: 15px; }
-        .last-updated { color: #666; font-style: italic; margin-bottom: 30px; }
-        .contact-box { background: #f0f7ff; padding: 15px; border-radius: 8px; margin: 20px 0; }
-        footer { margin-top: 50px; padding-top: 20px; border-top: 1px solid #ddd; font-size: 0.9em; color: #666; }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+            line-height: 1.7;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 24px;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Header Style */
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            background: var(--accent-gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            color: var(--gold-muted);
+            margin-top: 48px;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        h3 {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+            margin-top: 24px;
+        }
+
+        p, li {
+            color: var(--text-secondary);
+        }
+
+        strong {
+            color: #ffffff;
+            font-weight: 600;
+        }
+
+        /* Glassmorphism/Dark Card Effect */
+        .contact-box {
+            background: var(--card-bg);
+            padding: 24px;
+            border-radius: 16px;
+            border: 1px solid var(--border-color);
+            margin: 30px 0;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+        }
+
+        .last-updated {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-bottom: 40px;
+            opacity: 0.7;
+        }
+
+        ul {
+            padding-left: 20px;
+            list-style: none;
+        }
+
+        ul li::before {
+            content: "•";
+            color: var(--gold-muted);
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+        }
+
+        /* Links & Footer */
+        a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 30px;
+            border-top: 1px solid var(--border-color);
+            text-align: center;
+            font-size: 0.85em;
+            color: var(--text-secondary);
+        }
+
+        /* Decorative Accent (similar to the 3D shapes in your image) */
+        .gradient-bar {
+            height: 4px;
+            width: 60px;
+            background: var(--accent-gradient);
+            border-radius: 2px;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
+    <div class="gradient-bar"></div>
     <h1>Privacy Policy for Zavr</h1>
     <div class="last-updated">Last Updated: April 13, 2026</div>
 
-    <p><strong>Zavr</strong> ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our goal-based saving application ("Zavr"). Please read this policy carefully.</p>
+    <p><strong>Zavr</strong> is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our goal-based saving application. Please read this policy carefully.</p>
 
     <h2>1. Developer Information & Contact</h2>
     <div class="contact-box">
         <strong>Developer Name:</strong> Zavr <br>
-        <strong>Contact Email:</strong> zavrinfo@gmail.com <br>
-        <strong>Privacy Inquiries:</strong> zavrinfo@gmail.com <br>
-        
+        <strong>Contact Email:</strong> <a href="mailto:zavrinfo@gmail.com">zavrinfo@gmail.com</a> <br>
+        <strong>Privacy Inquiries:</strong> <a href="mailto:zavrinfo@gmail.com">zavrinfo@gmail.com</a>
     </div>
 
     <h2>2. Information We Collect</h2>
-    <p>Zavr collects the following types of data:</p>
+    <p>Zavr collects the following types of data to provide a premium financial experience:</p>
     
     <h3>Personal Information You Provide:</h3>
     <ul>
-        <li><strong>Account Information:</strong> Email address, username, and password (when you create an account)</li>
-        <li><strong>Profile Data:</strong> Display name, profile picture (if you choose to add one)</li>
-        <li><strong>Saving Goals:</strong> Goal names, target amounts, current progress, deadlines, and notes</li>
-        <li><strong>Group Data:</strong> Group names, member lists, contribution records, and group saving goals</li>
-        <li><strong>Financial Information:</strong> Saving amounts, contribution history, transaction records</li>
+        <li><strong>Account Information:</strong> Email address, username, and encrypted credentials.</li>
+        <li><strong>Profile Data:</strong> Display name and profile identification.</li>
+        <li><strong>Saving Goals:</strong> Goal names, target amounts, and personal deadlines.</li>
+        <li><strong>Group Data:</strong> Shared goal records and member contribution history.</li>
+        <li><strong>Financial Information:</strong> Saving amounts and transaction records.</li>
     </ul>
 
     <h3>Automatically Collected Information:</h3>
     <ul>
-        <li><strong>Device Information:</strong> Device model, operating system version, unique device identifiers</li>
-        <li><strong>Usage Data:</strong> App features used, time spent, frequency of use, crash logs</li>
-        <li><strong>Network Information:</strong> IP address, app version, timestamps</li>
+        <li><strong>Device Information:</strong> Model, OS version, and unique identifiers.</li>
+        <li><strong>Usage Data:</strong> Feature engagement, frequency of use, and crash logs.</li>
     </ul>
 
     <h2>3. How We Use Your Information</h2>
-    <p>We use your data for the following purposes:</p>
+    <p>We leverage your data to personalize your financial journey:</p>
     <ul>
-        <li><strong>App Functionality:</strong> To create and manage your solo and group saving goals, track progress, process contributions</li>
-        <li><strong>Account Management:</strong> To authenticate you, maintain your account, and sync data across devices</li>
-        <li><strong>Group Features:</strong> To facilitate group saving goals, track member contributions, and send notifications</li>
-        <li><strong>Analytics & Improvements:</strong> To understand how users interact with Zavr and improve our features</li>
-        <li><strong>Customer Support:</strong> To respond to your inquiries and troubleshoot issues</li>
-        <li><strong>Legal Compliance:</strong> To comply with applicable laws and regulations</li>
+        <li><strong>App Functionality:</strong> To manage solo and group goals and track real-time progress.</li>
+        <li><strong>Account Management:</strong> Secure authentication and cross-device synchronization.</li>
+        <li><strong>Analytics & Improvements:</strong> To refine the Zavr interface and user experience.</li>
+        <li><strong>Legal Compliance:</strong> Adhering to international financial regulations.</li>
     </ul>
 
-    <h2>4. Third-Party Services & Data Sharing</h2>
-    <p>Zavr integrates with the following third-party services:</p>
-    
-    <h3>Service Providers We Use:</h3>
-    <ul>
-        <li><strong>Authentication:</strong> [Firebase Auth / Custom backend - specify if used]</li>
-        <li><strong>Database & Backend:</strong> [Firebase Firestore / Supabase / MongoDB - specify]</li>
-        <li><strong>Analytics:</strong> [Google Analytics / Firebase Analytics / Mixpanel - specify if used]</li>
-        <li><strong>Crash Reporting:</strong> [Firebase Crashlytics / Sentry - specify if used]</li>
-        <li><strong>Push Notifications:</strong> [Firebase Cloud Messaging / OneSignal - specify if used]</li>
-    </ul>
-    
-    <p><strong>Important:</strong> We do <em>not</em> sell your personal information to third parties. We only share data as necessary to provide Zavr's core functionality or as required by law.</p>
+    <h2>4. Third-Party Services</h2>
+    <p>We do <strong>not</strong> sell your personal information. We integrate with industry-leading infrastructure providers (such as Firebase or Supabase) solely to ensure app stability and secure data hosting.</p>
 
     <h2>5. Data Security Measures</h2>
-    <p>We implement the following security measures to protect your information:</p>
+    <p>Your security is our priority. We employ high-end encryption standards:</p>
     <ul>
-        <li><strong>Encryption in Transit:</strong> All data transmitted between your device and our servers is encrypted using TLS/SSL (HTTPS)</li>
-        <li><strong>Encryption at Rest:</strong> Your data is encrypted when stored on our servers</li>
-        <li><strong>Authentication Security:</strong> Passwords are hashed and salted (never stored in plain text)</li>
-        <li><strong>Access Controls:</strong> Only authorized personnel have access to user data</li>
-        <li><strong>Regular Security Audits:</strong> We regularly review our security practices</li>
+        <li><strong>Encryption in Transit:</strong> TLS/SSL (HTTPS) for all data transfers.</li>
+        <li><strong>Encryption at Rest:</strong> AES-256 server-side storage encryption.</li>
+        <li><strong>Authentication Security:</strong> Industry-standard hashing for all sensitive credentials.</li>
     </ul>
-    
-    <p>However, no method of transmission over the internet is 100% secure. While we strive to protect your data, we cannot guarantee absolute security.</p>
 
     <h2>6. Data Retention & Deletion</h2>
-    <h3>How Long We Keep Your Data:</h3>
-    <ul>
-        <li><strong>Active Accounts:</strong> Your data is retained as long as your account is active</li>
-        <li><strong>Inactive Accounts:</strong> Accounts with no activity for 2 years may be archived</li>
-        <li><strong>Deleted Accounts:</strong> When you delete your account, we remove your personal data within 30 days</li>
-        <li><strong>Backup Data:</strong> Some data may remain in backups for up to 90 days after deletion</li>
-    </ul>
+    <p>You maintain full control over your data. Accounts inactive for over 2 years may be archived, but you may request full deletion at any time via <strong>Settings → Account → Delete My Account</strong>. Deletion requests are processed within 7 business days.</p>
 
-    <h3>How to Request Deletion:</h3>
-    <ul>
-        <li><strong>In-App Option:</strong> Go to Settings → Account → Delete My Account</li>
-        <li><strong>Email Request:</strong> Send a deletion request to [YOUR EMAIL] with "Delete My Zavr Account" in the subject line</li>
-        <li><strong>Processing Time:</strong> We will process your deletion request within 7 business days</li>
-    </ul>
-
-    <h2>7. Your Rights & Choices</h2>
-    <p>Depending on your location, you may have the following rights:</p>
-    <ul>
-        <li><strong>Access:</strong> Request a copy of the data we hold about you</li>
-        <li><strong>Correction:</strong> Correct inaccurate or incomplete data</li>
-        <li><strong>Deletion:</strong> Request deletion of your data (see Section 6)</li>
-        <li><strong>Portability:</strong> Receive your data in a structured, machine-readable format</li>
-        <li><strong>Opt-out:</strong> Opt out of non-essential data collection (like analytics)</li>
-    </ul>
-
-    <h2>8. Children's Privacy</h2>
-    <p>Zavr is not intended for children under 13 years of age (or 16 in certain jurisdictions). We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us immediately.</p>
-
-    <h2>9. Changes to This Privacy Policy</h2>
-    <p>We may update this policy periodically. We will notify you of material changes by:</p>
-    <ul>
-        <li>Displaying a notice within Zavr</li>
-        <li>Sending an email to your registered address</li>
-        <li>Updating the "Last Updated" date at the top of this page</li>
-    </ul>
-
-    <h2>10. International Data Transfers</h2>
-    <p>Your information may be transferred to and processed in countries other than your own. We ensure appropriate safeguards are in place for such transfers in compliance with applicable data protection laws.</p>
-
-    <h2>11. Contact Us</h2>
+    <h2>7. Contact Us</h2>
     <div class="contact-box">
-        If you have questions about this Privacy Policy or your data, please contact us at:<br><br>
+        If you have questions about this Privacy Policy or your data, please reach out:<br><br>
         <strong>Email:</strong> zavrinfo@gmail.com <br>
-        <strong>Response Time:</strong> We typically respond within 3-5 business days
+        <strong>Response Time:</strong> 3-5 business days
     </div>
 
     <footer>
-        <p>© 2026 Zavr. All rights reserved.</p>
+        <p>© 2026 Zavr. Designed for the future of saving.</p>
     </footer>
 </body>
 </html>
