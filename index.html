@@ -14,21 +14,18 @@
   --muted: #6b6b6b;
 }
 
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
 body {
   font-family: 'Inter', system-ui;
   background: var(--bg-gradient);
   padding: 20px;
 }
 
-/* CARD */
 .container {
   width: 100%;
   max-width: 420px;
@@ -43,7 +40,6 @@ body {
   box-shadow: 0 20px 60px rgba(0,0,0,0.25);
 }
 
-/* HEADER */
 .header {
   text-align: center;
 }
@@ -71,7 +67,6 @@ body {
   color: var(--muted);
 }
 
-/* SECTIONS */
 .section {
   margin-top: 18px;
 }
@@ -92,20 +87,6 @@ ul {
   padding-left: 16px;
 }
 
-/* BUTTON */
-.button {
-  margin-top: 20px;
-  width: 100%;
-  padding: 12px;
-  border-radius: 12px;
-  background: linear-gradient(90deg, #5f2eea, #7b3ff2);
-  color: white;
-  text-align: center;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-/* FOOTER */
 .footer {
   text-align: center;
   margin-top: 14px;
@@ -113,7 +94,7 @@ ul {
   color: var(--muted);
 }
 
-/* SCROLLBAR */
+/* Scrollbar */
 .container::-webkit-scrollbar {
   width: 6px;
 }
@@ -161,7 +142,9 @@ ul {
     <li>Savings goals and activity data</li>
     <li>Basic device and usage information</li>
   </ul>
-  <p>We do not collect sensitive financial information such as bank details or payment credentials.</p>
+  <p>
+    We do not collect sensitive financial information such as bank details or payment credentials.
+  </p>
 </div>
 
 <!-- USAGE -->
@@ -232,27 +215,12 @@ ul {
   <p>zavrinfo@gmail.com</p>
 </div>
 
-<!-- BUTTON -->
-<div class="button" onclick="goBack()">Back to App</div>
-
 <!-- FOOTER -->
 <div class="footer">
   © 2026 Zavr — Smart Saving Made Simple
 </div>
 
 </div>
-
-<!-- SCRIPT -->
-<script>
-function goBack() {
-  if (window.history.length > 1) {
-    window.history.back();
-  } else {
-    // fallback (change this to your app/home page)
-    window.location.href = "index.html";
-  }
-}
-</script>
 
 </body>
 </html>
