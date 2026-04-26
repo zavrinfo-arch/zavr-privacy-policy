@@ -1,187 +1,247 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Zavr: Goal-Based Saving App</title>
-    <style>
-        :root {
-            --bg-color: #0f0f0f;
-            --card-bg: #1a1a1a;
-            --text-primary: #e0e0e0;
-            --text-secondary: #a0a0a0;
-            --accent-gradient: linear-gradient(135deg, #ff6b6b 0%, #f0a500 100%);
-            --border-color: #2a2a2a;
-            --gold-muted: #c5a059;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-primary);
-            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
-            line-height: 1.7;
-            max-width: 850px;
-            margin: 0 auto;
-            padding: 40px 24px;
-            -webkit-font-smoothing: antialiased;
-        }
+<title>Zavr Privacy Policy</title>
 
-        /* Header Style */
-        h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            letter-spacing: -0.02em;
-            background: var(--accent-gradient);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            margin-bottom: 8px;
-        }
+<style>
+:root {
+  --bg-gradient: linear-gradient(135deg, #5f2eea, #7b3ff2);
+  --card-bg: #ffffff;
+  --text: #1a1a1a;
+  --muted: #6b6b6b;
+}
 
-        h2 {
-            font-size: 1.4rem;
-            color: var(--gold-muted);
-            margin-top: 48px;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 12px;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-        h3 {
-            color: var(--text-primary);
-            font-size: 1.1rem;
-            margin-top: 24px;
-        }
+/* BODY */
+body {
+  font-family: 'Inter', system-ui;
+  background: var(--bg-gradient);
+  padding: 20px;
+}
 
-        p, li {
-            color: var(--text-secondary);
-        }
+/* CARD */
+.container {
+  width: 100%;
+  max-width: 420px;
+  margin: 40px auto;
+  background: var(--card-bg);
+  border-radius: 20px;
+  padding: 22px;
 
-        strong {
-            color: #ffffff;
-            font-weight: 600;
-        }
+  /* SCROLL FIX */
+  max-height: 90vh;
+  overflow-y: auto;
 
-        /* Glassmorphism/Dark Card Effect */
-        .contact-box {
-            background: var(--card-bg);
-            padding: 24px;
-            border-radius: 16px;
-            border: 1px solid var(--border-color);
-            margin: 30px 0;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
+  box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+}
 
-        .last-updated {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-            margin-bottom: 40px;
-            opacity: 0.7;
-        }
+/* HEADER */
+.header {
+  text-align: center;
+}
 
-        ul {
-            padding-left: 20px;
-            list-style: none;
-        }
+.logo {
+  width: 48px;
+  height: 48px;
+  margin: auto;
+  border-radius: 14px;
+  background: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
 
-        ul li::before {
-            content: "•";
-            color: var(--gold-muted);
-            font-weight: bold;
-            display: inline-block; 
-            width: 1em;
-            margin-left: -1em;
-        }
+.title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 10px;
+}
 
-        /* Links & Footer */
-        a {
-            color: #ff6b6b;
-            text-decoration: none;
-        }
+.subtitle {
+  font-size: 12px;
+  color: var(--muted);
+}
 
-        footer {
-            margin-top: 80px;
-            padding-top: 30px;
-            border-top: 1px solid var(--border-color);
-            text-align: center;
-            font-size: 0.85em;
-            color: var(--text-secondary);
-        }
+/* SECTIONS */
+.section {
+  margin-top: 18px;
+}
 
-        /* Decorative Accent (similar to the 3D shapes in your image) */
-        .gradient-bar {
-            height: 4px;
-            width: 60px;
-            background: var(--accent-gradient);
-            border-radius: 2px;
-            margin-bottom: 20px;
-        }
-    </style>
+.section h2 {
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.section p,
+.section li {
+  font-size: 12.5px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 16px;
+}
+
+/* BUTTON */
+.button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #5f2eea, #7b3ff2);
+  color: white;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  margin-top: 14px;
+  font-size: 11px;
+  color: var(--muted);
+}
+
+/* SCROLLBAR */
+.container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background: #7b3ff2;
+  border-radius: 10px;
+}
+
+.container {
+  scrollbar-width: thin;
+  scrollbar-color: #7b3ff2 transparent;
+}
+</style>
 </head>
+
 <body>
-    <div class="gradient-bar"></div>
-    <h1>Privacy Policy for Zavr</h1>
-    <div class="last-updated">Last Updated: April 13, 2026</div>
 
-    <p><strong>Zavr</strong> is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our goal-based saving application. Please read this policy carefully.</p>
+<div class="container">
 
-    <h2>1. Developer Information & Contact</h2>
-    <div class="contact-box">
-        <strong>Developer Name:</strong> Zavr <br>
-        <strong>Contact Email:</strong> <a href="mailto:zavrinfo@gmail.com">zavrinfo@gmail.com</a> <br>
-        <strong>Privacy Inquiries:</strong> <a href="mailto:zavrinfo@gmail.com">zavrinfo@gmail.com</a>
-    </div>
+<!-- HEADER -->
+<div class="header">
+  <div class="logo">Z</div>
+  <div class="title">Privacy Policy</div>
+  <div class="subtitle">Last updated April 2026</div>
+</div>
 
-    <h2>2. Information We Collect</h2>
-    <p>Zavr collects the following types of data to provide a premium financial experience:</p>
-    
-    <h3>Personal Information You Provide:</h3>
-    <ul>
-        <li><strong>Account Information:</strong> Email address, username, and encrypted credentials.</li>
-        <li><strong>Profile Data:</strong> Display name and profile identification.</li>
-        <li><strong>Saving Goals:</strong> Goal names, target amounts, and personal deadlines.</li>
-        <li><strong>Group Data:</strong> Shared goal records and member contribution history.</li>
-        <li><strong>Financial Information:</strong> Saving amounts and transaction records.</li>
-    </ul>
+<!-- ABOUT -->
+<div class="section">
+  <h2>About Zavr</h2>
+  <p>
+    Zavr is a goal-based savings tracking application designed to help users build consistent financial habits. Users can create goals, monitor progress, and collaborate through group savings.
+  </p>
+  <p>
+    Zavr is strictly a financial tracking tool and does not provide banking, lending, or investment services.
+  </p>
+</div>
 
-    <h3>Automatically Collected Information:</h3>
-    <ul>
-        <li><strong>Device Information:</strong> Model, OS version, and unique identifiers.</li>
-        <li><strong>Usage Data:</strong> Feature engagement, frequency of use, and crash logs.</li>
-    </ul>
+<!-- DATA -->
+<div class="section">
+  <h2>Information We Collect</h2>
+  <ul>
+    <li>Email address and login credentials</li>
+    <li>User profile data (name, avatar)</li>
+    <li>Savings goals and activity data</li>
+    <li>Basic device and usage information</li>
+  </ul>
+  <p>We do not collect sensitive financial information such as bank details or payment credentials.</p>
+</div>
 
-    <h2>3. How We Use Your Information</h2>
-    <p>We leverage your data to personalize your financial journey:</p>
-    <ul>
-        <li><strong>App Functionality:</strong> To manage solo and group goals and track real-time progress.</li>
-        <li><strong>Account Management:</strong> Secure authentication and cross-device synchronization.</li>
-        <li><strong>Analytics & Improvements:</strong> To refine the Zavr interface and user experience.</li>
-        <li><strong>Legal Compliance:</strong> Adhering to international financial regulations.</li>
-    </ul>
+<!-- USAGE -->
+<div class="section">
+  <h2>How We Use Your Information</h2>
+  <ul>
+    <li>To create and manage accounts</li>
+    <li>To provide app functionality</li>
+    <li>To improve performance and experience</li>
+    <li>To maintain platform security</li>
+  </ul>
+</div>
 
-    <h2>4. Third-Party Services</h2>
-    <p>We do <strong>not</strong> sell your personal information. We integrate with industry-leading infrastructure providers (such as Firebase or Supabase) solely to ensure app stability and secure data hosting.</p>
+<!-- STORAGE -->
+<div class="section">
+  <h2>Data Storage & Retention</h2>
+  <p>
+    Your data is securely stored using trusted cloud infrastructure and retained only while your account is active.
+  </p>
+</div>
 
-    <h2>5. Data Security Measures</h2>
-    <p>Your security is our priority. We employ high-end encryption standards:</p>
-    <ul>
-        <li><strong>Encryption in Transit:</strong> TLS/SSL (HTTPS) for all data transfers.</li>
-        <li><strong>Encryption at Rest:</strong> AES-256 server-side storage encryption.</li>
-        <li><strong>Authentication Security:</strong> Industry-standard hashing for all sensitive credentials.</li>
-    </ul>
+<!-- SECURITY -->
+<div class="section">
+  <h2>Security</h2>
+  <p>
+    We use encrypted connections (HTTPS) and secure authentication systems to protect your data.
+  </p>
+</div>
 
-    <h2>6. Data Retention & Deletion</h2>
-    <p>You maintain full control over your data. Accounts inactive for over 2 years may be archived, but you may request full deletion at any time via <strong>Settings → Account → Delete My Account</strong>. Deletion requests are processed within 7 business days.</p>
+<!-- THIRD PARTY -->
+<div class="section">
+  <h2>Third-Party Services</h2>
+  <p>
+    We use trusted services such as Supabase for authentication and storage. These providers follow industry security standards.
+  </p>
+</div>
 
-    <h2>7. Contact Us</h2>
-    <div class="contact-box">
-        If you have questions about this Privacy Policy or your data, please reach out:<br><br>
-        <strong>Email:</strong> zavrinfo@gmail.com <br>
-        <strong>Response Time:</strong> 3-5 business days
-    </div>
+<!-- RIGHTS -->
+<div class="section">
+  <h2>Your Rights</h2>
+  <ul>
+    <li>Access your data</li>
+    <li>Update or correct your data</li>
+    <li>Delete your account</li>
+    <li>Request data export</li>
+  </ul>
+</div>
 
-    <footer>
-        <p>© 2026 Zavr. Designed for the future of saving.</p>
-    </footer>
+<!-- CHILDREN -->
+<div class="section">
+  <h2>Children’s Privacy</h2>
+  <p>
+    Zavr is not intended for users under the age of 13.
+  </p>
+</div>
+
+<!-- CHANGES -->
+<div class="section">
+  <h2>Changes to Policy</h2>
+  <p>
+    We may update this policy. Changes will be reflected with an updated date on this page.
+  </p>
+</div>
+
+<!-- CONTACT -->
+<div class="section">
+  <h2>Contact</h2>
+  <p>zavrinfo@gmail.com</p>
+</div>
+
+<!-- BUTTON -->
+<div class="button">Back to App</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  © 2026 Zavr — Smart Saving Made Simple
+</div>
+
+</div>
+
 </body>
 </html>
