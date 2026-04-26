@@ -37,7 +37,6 @@ body {
   border-radius: 20px;
   padding: 22px;
 
-  /* SCROLL FIX */
   max-height: 90vh;
   overflow-y: auto;
 
@@ -234,7 +233,7 @@ ul {
 </div>
 
 <!-- BUTTON -->
-<div class="button">Back to App</div>
+<div class="button" onclick="goBack()">Back to App</div>
 
 <!-- FOOTER -->
 <div class="footer">
@@ -242,6 +241,18 @@ ul {
 </div>
 
 </div>
+
+<!-- SCRIPT -->
+<script>
+function goBack() {
+  if (window.history.length > 1) {
+    window.history.back();
+  } else {
+    // fallback (change this to your app/home page)
+    window.location.href = "index.html";
+  }
+}
+</script>
 
 </body>
 </html>
